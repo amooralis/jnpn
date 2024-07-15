@@ -1,0 +1,59 @@
+.button {
+    border-radius: 50px;
+    margin: 3px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+
+.button_red {
+    border: none;
+    background-image: url('../../images/delete.png');
+    background-size: cover;
+}
+
+.button_red:hover {
+    width: 46px;
+    height: 46px;
+    margin: 0px;
+}
+
+.button_orange {
+    border: none;
+    background-image: url('../../images/edit.png');
+    background-size: cover;
+}
+
+.button_orange:hover {
+    width: 46px;
+    height: 46px;
+    margin: 0px;
+}
+
+.button_blue {
+    border: none;
+    background-image: url('../../images/add.png');
+    background-size: cover;
+}
+
+.button_blue:hover {
+    width: 46px;
+    height: 46px;
+    margin: 0px;
+}
+
+
+.button_green {
+    border: none;
+    background-image: url('../../images/done.png');
+    background-size: cover;
+}
+
+.button_green:hover {
+    width: 46px;
+    height: 46px;
+    margin: 0px;
+}

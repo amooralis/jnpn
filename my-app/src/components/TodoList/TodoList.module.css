@@ -1,0 +1,25 @@
+
+
+
+.todoList{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    border-radius: 30px;
+    width: 100%;
+    margin-bottom: 10px;
+    height: 350px;
+    overflow-y: auto;
+
+    scrollbar-width: none; /* Для Firefox */
+    -ms-overflow-style: none;  /* Для Internet Explorer и Edge */
+}
+
+
+.todoList::-webkit-scrollbar {
+    display: none; /* Для Chrome, Safari и Opera */
+}
+
+
+

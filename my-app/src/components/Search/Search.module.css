@@ -1,0 +1,85 @@
+
+.searchPanel{
+    display:grid;
+    grid-template-columns: 50px 1fr 130px;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 20px;
+    font-size: 20px;
+    width: 70%;
+    min-width: 200px;
+}
+
+.searchPanel img{
+    width: 35px;
+    height: 35px;
+}
+
+.searchInput{
+    width: 80%;
+    height: 15%;
+    border-radius: 30px;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.radioGroup {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+/*.radioGroup > * {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*}*/
+
+.radioItem {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.radioItem input[type="radio"] {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+}
+
+.radioItem label {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+}
+
+.radioItem label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border: 2px solid #FF4191;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.radioItem input[type="radio"]:checked + label::after {
+    content: "";
+    position: absolute;
+    left: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #FF4191;
+}

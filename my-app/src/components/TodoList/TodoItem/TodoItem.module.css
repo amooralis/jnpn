@@ -1,0 +1,47 @@
+
+
+.todoItemCard{
+    display: grid;
+    grid-template-columns: 60px 20px 1fr 2fr 20px 50px 50px;
+    grid-template-rows: 100px;
+
+    background-color: #FFF078;
+    border: 3px solid black;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    padding: 20px;
+    border-radius: 20px;
+    width: 80%;
+    min-width: 340px;
+    height: 50px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    /*box-shadow: 0px -1px 30px 23px rgba(255, 255, 255, 0.47);*/
+}
+
+.todoItemCard:hover{
+    background-color: #75FBFD;
+}
+
+
+.todoItemCheckBox{
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+}
+
+.line{
+    border-left: 2px solid #000;
+    height: 50px;
+}
+
+
+
+.todoDescription{
+    white-space: nowrap; /* Текст не переносится */
+    overflow: hidden; /* Обрезаем всё за пределами блока */
+    text-overflow: ellipsis;
+    padding: 10px;
+    max-width: 80%;
+}
