@@ -38,9 +38,9 @@ export const TodoItem: React.FC<TodoItemProps> = ({todo, checkTodo, selectTodoId
 
         <div className={styles.line}></div>
 
-        {!todo.checked && <Button color={'orange'} onClick={()=>selectTodoIdForEdit(todo.id)}></Button>}
-        {/*<Button color={'orange'} onClick={()=>selectTodoIdForEdit(todo.id)}></Button>*/}
-        {!todo.checked && <Button color={'red'} onClick={()=>deleteTodo(todo.id)}></Button>}
+        {!todo.checked && <Button color={'orange'} onClick={() => selectTodoIdForEdit(todo.id)} aria-label="edit"></Button>}
+        {!todo.checked && <Button color={'red'} onClick={()=>deleteTodo(todo.id)} aria-label="delete"></Button>}
+
 
     </div>
 }
